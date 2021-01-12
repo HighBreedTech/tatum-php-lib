@@ -17,7 +17,7 @@ apt-get install php php-gmp php-mbstring php-mcrypt
 
 <h6>To let Library generate mnemonic</h6>
 
-<code>
+```php
 <?php
 require("../src/Tatum.php");
 
@@ -35,11 +35,11 @@ echo "<hr/>";
 echo $Tatum->generateAddressFromXPub($coin, $walletX->xpub, '0');
 
 echo "<hr/>";
-</code>
+```
 
 <h6>To Generate From mnemonic given</h6>
 
-<code>
+```php
 <?php
 require("../src/Tatum.php");
 
@@ -59,5 +59,5 @@ echo "<hr/>";
 echo $Tatum->generateAddressFromXPub($coin, $walletX->xpub, '0');
 
 echo "<hr/>";
-</code>
+```
 Bitcoin and Litecoin only is supported yet.
